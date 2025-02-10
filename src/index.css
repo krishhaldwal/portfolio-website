@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, sans-serif;
+  }
+#tsparticles {
+    z-index: 0;
+  }
+   
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                   0 0 10px rgba(255, 255, 255, 0.6),
+                   0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                   0 0 20px rgba(255, 255, 255, 0.8),
+                   0 0 30px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                   0 0 10px rgba(255, 255, 255, 0.6),
+                   0 0 15px rgba(255, 255, 255, 0.4);
+    }
+  }
+  
+  .glow-text {
+    animation: glowing 3s infinite ease-in-out;
+  }
+
+  @font-face {
+    font-family: "Newf"; /* Name to use in Tailwind */
+    src: url("../src/assets/fonts/StarlightStreet-ExtraLight.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Newfbold;
+    src: url("../src/assets/fonts/StarlightStreet-Regular.otf") format("opentype");
+    font-weight: medium;
+    font-style: medium;
+  }
+
+  .glow-text-strong {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+                 0 0 16px rgba(255, 255, 255, 0.7),
+                 0 0 24px rgba(255, 255, 255, 0.6);
+  }
+
+  .glow-text-colored {
+    text-shadow: 0 0 6px rgba(0, 255, 255, 0.8),
+                 0 0 12px rgba(0, 255, 255, 0.6),
+                 0 0 18px rgba(0, 255, 255, 0.4);
+  }
+
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  .animate-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 0;
+    animation: typewriter 2s steps(12) forwards;
+  }
+
+
+  @font-face {
+    font-family: 'Comfortaa';
+    src: url('../src/assets/fonts/Comfortaa-VariableFont_wght.ttf') format('truetype');
+    
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+
+
+
+
+
+
