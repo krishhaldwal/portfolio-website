@@ -5,7 +5,7 @@ import "tailwindcss/tailwind.css";
 import { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Snowfall from "react-snowfall";
+
 
 
 
@@ -117,11 +117,7 @@ const InfoPage = () => {
   return (
     <div className="  min-h-screen bg-[#000000] text-white flex flex-col items-center relative font-sans px-4 sm:px-8 overflow-hidden">
 
-<Snowfall
-  snowflakeCount={20}  // Increase/Decrease snowfall density
-  style={{ zIndex: 999 }} // Make sure it appears above other elements
-  color="#FFFFFF" // Snowflake color
-/>
+
       <TrailingLight />
       {showPopup && <DeveloperWisdomPopup />  } {/* Show popup when triggered */}
       
