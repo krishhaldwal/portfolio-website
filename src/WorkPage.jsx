@@ -167,8 +167,8 @@ const WorkPage = () => {
       image: "/images/window/work3.webp",
     },
     {
-      title: "AI Chatbot",
-      description: "A powerful AI chatbot using NLP to assist users with automated responses and smart recommendations.",
+      title: "TypoShpere",
+      description: "A full-stack blog platform with user login and blog posting capabilities",
       link: "https://yourchatbot.com",
       image: "/images/window/work4.webp",
       
